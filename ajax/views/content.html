@@ -1,0 +1,15 @@
+<!-- Page Content -->
+<div class="container-fluid">
+    <!-- Jumbotron Header -->
+    <header class="jumbotron hero-spacer">
+        <h1>{{ 'application.view.ajax.welcome' | localize }}</h1>
+        <p>{{ 'application.view.ajax.content' | localize }}</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+        <p><button type="button" class="btn btn-lg btn-primary" data-ng-disabled="btnDisabled" data-ng-click="getData()">Get data from the internet!</button></p>
+    </header>
+    <div>
+        {{ data  | json }}
+    </div>
+</div>
+<!-- /.container -->

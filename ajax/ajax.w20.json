@@ -1,0 +1,23 @@
+{
+    "id": "ajax",
+    "name": "W20 ajax call fragmet",
+
+    "modules": {
+        "content": {
+            "path": "{ajax}/modules/main",
+            "autoload": true
+        }
+    },
+
+    "i18n": {
+        "en": ["{ajax}/i18n/messages-en.json"],
+        "fr": ["{ajax}/i18n/messages-fr.json"]
+    },
+
+    "routes": {
+        "content":{
+            "templateUrl":"{ajax}/views/content.html",
+            "controller":"ContentController"
+        }
+    }
+}

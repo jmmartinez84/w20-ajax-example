@@ -9,7 +9,7 @@ define([
             var deferred = $q.defer();
             $http.get('http://jsonplaceholder.typicode.com/users').then(function(response){
                 $timeout(function(){
-                    deferred.promise.resolve(response.data);
+                    deferred.resolve(response.data);
                 },2000);
                
             });
